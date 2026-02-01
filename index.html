@@ -13,6 +13,390 @@
   font-family: 'Inter', sans-serif !important;
 }
   
+  /* Japanese text styling for home-about_img-text */
+  html[lang="ja"] .home-about_img-text {
+    padding-left: 50% !important;
+    padding-right: 50% !important;
+  }
+  
+  @media (max-width: 1200px) {
+    html[lang="ja"] .home-about_img-text {
+      padding-left: 15% !important;
+      padding-right: 15% !important;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    html[lang="ja"] .home-about_img-text {
+      padding-left: 12% !important;
+      padding-right: 12% !important;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    html[lang="ja"] .home-about_img-text {
+      padding-left: 10% !important;
+      padding-right: 10% !important;
+    }
+  }
+  
+  /* Increase margin for work-list_component */
+  .work-list_component {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .work-list_component .spacer-xlarge {
+    margin-bottom: 80px;
+  }
+  
+  .work-list_component .label_wrap {
+    margin-bottom: 60px;
+  }
+  
+  @media (max-width: 991px) {
+    .work-list_component {
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+    
+    .work-list_component .spacer-xlarge {
+      margin-bottom: 60px;
+    }
+    
+    .work-list_component .label_wrap {
+      margin-bottom: 40px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .work-list_component {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+    
+    .work-list_component .spacer-xlarge {
+      margin-bottom: 40px;
+    }
+    
+    .work-list_component .label_wrap {
+      margin-bottom: 30px;
+    }
+  }
+  
+  /* Info to Content transformation styling */
+  .info-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 0;
+    position: relative;
+  }
+  
+  /* Margin for grid sections in work-list */
+  .work-list_component .grid {
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 30px;
+    text-align: center;
+  }
+  
+  /* Ensure consistent image sizing */
+  .work-list_component .grid > img {
+    width: 100%;
+    max-width: 484px;
+    height: auto;
+    display: block;
+  }
+  
+  /* Text content styling */
+  .work-list_component .grid > .w-richtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+  }
+  
+  /* Reduce margin for specific grid containing "Your Voice, Any Language" */
+  .work-list_component .grid:has(#w-node-b27a8cb8-bfe9-1d45-fbdd-bb52513ceb44-a3becf0f) {
+    margin-bottom: 40px;
+  }
+  
+  /* Size adjustment for specific videos in grid-5 */
+  .work-list_component .grid-5 {
+    grid-template-columns: 1fr 1fr;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .work-list_component .background-video-6,
+  .work-list_component .background-video-7 {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 9/16;
+    justify-self: center;
+  }
+  
+  @media (max-width: 991px) {
+    .work-list_component .grid {
+      margin-bottom: 80px;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    
+    /* Increase margin for iPhone image grid on iPad */
+    .work-list_component .grid:has(#w-node-_239241ca-46eb-a7bc-a250-6d01b7d2fa4c-a3becf0f) {
+      margin-bottom: 100px;
+    }
+    
+    /* Center all images and limit their size */
+    .work-list_component .grid > img {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    /* Ensure text content is properly spaced */
+    .work-list_component .grid > .w-richtext {
+      text-align: center;
+      padding: 0 20px;
+    }
+    
+    .work-list_component .grid-5 {
+      max-width: 700px;
+      gap: 40px;
+    }
+    
+    .work-list_component .background-video-6,
+    .work-list_component .background-video-7 {
+      max-width: 320px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .work-list_component .grid {
+      margin-bottom: 60px;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    
+    /* Increase margin for iPhone image grid on mobile */
+    .work-list_component .grid:has(#w-node-_239241ca-46eb-a7bc-a250-6d01b7d2fa4c-a3becf0f) {
+      margin-bottom: 100px;
+    }
+    
+    /* Center all images and limit their size on mobile */
+    .work-list_component .grid > img {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    
+    /* Text content centered on mobile */
+    .work-list_component .grid > .w-richtext {
+      text-align: center;
+      padding: 0 15px;
+    }
+    
+    .work-list_component .grid-5 {
+      grid-template-columns: 1fr;
+      max-width: 100%;
+      grid-row-gap: 40px;
+    }
+    
+    .work-list_component .background-video-6,
+    .work-list_component .background-video-7 {
+      max-width: 280px;
+    }
+  }
+  
+  /* Footer social media links styling */
+  .footer_social-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .footer_social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .footer_social-link:hover {
+    opacity: 0.7;
+  }
+  
+  .footer_social-icon {
+    width: 25px;
+    height: 25px;
+    display: block;
+  }
+  
+  .footer_social-icon svg {
+    width: 25px;
+    height: 25px;
+    display: block;
+  }
+  
+  .info-content-image {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+  }
+  
+  .info-content-image.animate-in {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  
+  .transform-effect {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    flex-shrink: 0;
+  }
+  
+  .transform-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    animation: flowRight 1.5s ease-in-out infinite;
+  }
+  
+  .transform-line {
+    height: 2px;
+    background: linear-gradient(90deg, #328188, #4a9ba3, #57a5ad);
+    border-radius: 2px;
+  }
+  
+  .transform-line:nth-child(1) {
+    width: 40px;
+    animation: line1 1.5s ease-in-out infinite;
+  }
+  
+  .transform-line:nth-child(2) {
+    width: 50px;
+    animation: line2 1.5s ease-in-out infinite;
+  }
+  
+  .transform-line:nth-child(3) {
+    width: 45px;
+    animation: line3 1.5s ease-in-out infinite;
+  }
+  
+  @keyframes line1 {
+    0%, 100% { transform: translateX(0); opacity: 0.6; }
+    50% { transform: translateX(8px); opacity: 1; }
+  }
+  
+  @keyframes line2 {
+    0%, 100% { transform: translateX(0); opacity: 0.8; }
+    50% { transform: translateX(12px); opacity: 1; }
+  }
+  
+  @keyframes line3 {
+    0%, 100% { transform: translateX(0); opacity: 0.7; }
+    50% { transform: translateX(10px); opacity: 1; }
+  }
+  
+  @media (max-width: 991px) {
+    .info-content-container {
+      gap: 20px;
+    }
+    
+    .info-content-image {
+      width: 180px;
+    }
+    
+    .transform-effect {
+      width: 50px;
+    }
+    
+    .transform-line:nth-child(1) { width: 35px; }
+    .transform-line:nth-child(2) { width: 45px; }
+    .transform-line:nth-child(3) { width: 40px; }
+  }
+  
+  @media (max-width: 767px) {
+    .info-content-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .info-content-image {
+      width: 160px;
+    }
+    
+    .transform-effect {
+      width: 40px;
+      transform: rotate(90deg);
+    }
+    
+    .transform-line:nth-child(1) { width: 30px; }
+    .transform-line:nth-child(2) { width: 40px; }
+    .transform-line:nth-child(3) { width: 35px; }
+  }
+  
+  /* Disable all hover/interaction effects on Contact Us button */
+  .button .button_gradient-ball {
+    animation: none !important;
+    background: transparent !important;
+  }
+  
+  .button .button_gradient {
+    opacity: 0 !important;
+    animation: none !important;
+    display: none !important;
+  }
+  
+  .button .button_gradient-glow {
+    opacity: 0 !important;
+    animation: none !important;
+    display: none !important;
+  }
+  
+  .button:hover .button_gradient-ball,
+  .button:focus .button_gradient-ball,
+  .button:active .button_gradient-ball {
+    animation: none !important;
+    background: transparent !important;
+  }
+  
+  .button:hover .button_gradient,
+  .button:focus .button_gradient,
+  .button:active .button_gradient {
+    opacity: 0 !important;
+    animation: none !important;
+    display: none !important;
+  }
+  
+  .button:hover .button_gradient-glow,
+  .button:focus .button_gradient-glow,
+  .button:active .button_gradient-glow {
+    opacity: 0 !important;
+    animation: none !important;
+    display: none !important;
+  }
+  
+  .button:hover,
+  .button:focus,
+  .button:active {
+    transform: none !important;
+  }
+  
   /* Equal margins for all navbar components */
   .navbar_links {
     margin-right: 12px;
@@ -27,6 +411,7 @@
     position: relative;
     display: inline-flex;
     align-items: center;
+    margin-left: 8px;
   }
   
   .language-icon {
@@ -94,9 +479,35 @@
     background: #e8e8e8;
   }
   
-  @media (max-width: 991px) {
+  /* iPad and Tablet view */
+  @media (max-width: 1024px) and (min-width: 768px) {
+    .navbar_links-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .navbar_links {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+    }
+    
+    .navbar_link {
+      display: flex;
+      align-items: center;
+    }
+    
+    .button {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+    }
+    
     .language-switcher {
-      margin-left: 15px;
+      margin-left: 6px;
+      display: flex;
+      align-items: center;
     }
     
     .language-icon svg {
@@ -105,21 +516,70 @@
     }
   }
   
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     .language-switcher {
-      margin-left: 10px;
-    }
-    
-    .language-icon {
-      padding: 6px 0px;
+      margin-left: 6px;
     }
     
     .language-icon svg {
-      width: 18px;
-      height: 18px;
+      width: 20px;
+      height: 20px;
+    }
+    
+    .navbar_links-wrap {
+      gap: 8px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .navbar_links {
+      margin-right: 8px;
+      display: flex;
+      align-items: center;
     }
   }
-</style></head><body><div class="page-wrapper"><nav class="navbar"><div class="padding-global"><div class="navbar_component"><a href="index.html" aria-current="page" class="navbar_logo-wrap w-inline-block w--current"><img src="assets/images/691149a907b1b6bfc6cdc57a_Laxy Logo.svg" loading="lazy" alt="" class="navbar_logo"/></a><div class="navbar_links-wrap"><div class="navbar_links"><a href="index.html" aria-current="page" class="navbar_link w-inline-block w--current"><div class="navbar_link-text _1">Home</div><div class="navbar_link-text _2">Home</div></a></div><a data-wf--button--variant="light-small" href="contact.html" class="button w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2 w-inline-block"><div class="button_inner w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2"><div class="button_gradient"><div class="button_gradient-ball ball-1 w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2"></div><div class="button_gradient-ball ball-2 w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2"></div></div><div class="button_text">Contact Us</div></div><div class="button_gradient-glow"><div class="button_gradient-ball ball-1 w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2"></div><div class="button_gradient-ball ball-2 w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2"></div></div></a><div class="language-switcher"><div class="language-icon" id="languageIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div><div class="language-dropdown" id="languageDropdown"><button class="language-option" data-lang="en">English</button><button class="language-option" data-lang="ja">日本語</button></div></div></div><div class="navbar_hamburger-wrap"><div class="navbar_hamburger"><div class="navbar_hamburger-line _1"></div><div class="navbar_hamburger-line _2"></div></div></div></div></div></nav><main class="main-wrapper"><section class="section_home-header"><div class="padding-section-xxlarge"></div><div class="padding-section-xxlarge"></div><div class="padding-global z-index-2"><div class="home-header_component"><div class="home-header_headings"><h1 class="home-header_heading _1">We&#x27;re here to tell your story</h1><h2 class="home-header_heading _2">to connect with audience</h2><h3 class="home-header_heading _3">to build your future.</h3></div><div class="home-header_imgs-wrapper"><div class="home-header_imgs-wrap"><div class="home-header_img-wrap _1"><img src="assets/images/69114c827c829dd113c7c942_The Louvre Museum.jpeg" loading="lazy" width="180" sizes="180px" alt="" srcset="assets/images/69114c827c829dd113c7c942_The Louvre Museum-p-500.jpeg 500w, assets/images/69114c827c829dd113c7c942_The Louvre Museum-p-800.jpeg 800w, assets/images/69114c827c829dd113c7c942_The Louvre Museum-p-1080.jpeg 1080w, assets/images/69114c827c829dd113c7c942_The Louvre Museum-p-1600.jpeg 1600w, assets/images/69114c827c829dd113c7c942_The Louvre Museum-p-2000.jpeg 2000w, assets/images/69114c827c829dd113c7c942_The Louvre Museum-p-2600.jpeg 2600w, assets/images/69114c827c829dd113c7c942_The Louvre Museum.jpeg 3000w" class="home-header_img"/></div><div class="home-header_img-wrap _2"><img src="assets/images/69307a438bc4e70fba7d8062_維納斯的誕生.jpg" loading="lazy" width="180" sizes="180px" alt="" srcset="assets/images/69307a438bc4e70fba7d8062_維納斯的誕生-p-500.jpg 500w, assets/images/69307a438bc4e70fba7d8062_維納斯的誕生-p-800.jpg 800w, assets/images/69307a438bc4e70fba7d8062_維納斯的誕生-p-1080.jpg 1080w, assets/images/69307a438bc4e70fba7d8062_維納斯的誕生.jpg 1599w" class="home-header_img"/></div><div class="home-header_img-wrap _3"><img src="assets/images/69114c8341812ba378b59c22_The Pyramid.jpeg" loading="lazy" width="180" sizes="180px" alt="" srcset="assets/images/69114c8341812ba378b59c22_The Pyramid-p-500.jpeg 500w, assets/images/69114c8341812ba378b59c22_The Pyramid-p-800.jpeg 800w, assets/images/69114c8341812ba378b59c22_The Pyramid-p-1080.jpeg 1080w, assets/images/69114c8341812ba378b59c22_The Pyramid-p-1600.jpeg 1600w, assets/images/69114c8341812ba378b59c22_The Pyramid-p-2000.jpeg 2000w, assets/images/69114c8341812ba378b59c22_The Pyramid-p-2600.jpeg 2600w, assets/images/69114c8341812ba378b59c22_The Pyramid.jpeg 3000w" class="home-header_img"/></div><div class="home-header_img-wrap _4"><img src="assets/images/69307aa13888b0cdaca95f5e_戴珍珠耳環的少女.jpg" loading="lazy" width="180" sizes="180px" alt="" srcset="assets/images/69307aa13888b0cdaca95f5e_戴珍珠耳環的少女-p-500.jpg 500w, assets/images/69307aa13888b0cdaca95f5e_戴珍珠耳環的少女.jpg 650w" class="home-header_img"/></div><div class="home-header_img-wrap _5"><img src="assets/images/69114c824381c938b6e90e71_David.jpg" loading="lazy" width="180" sizes="180px" alt="" srcset="assets/images/69114c824381c938b6e90e71_David-p-500.jpg 500w, assets/images/69114c824381c938b6e90e71_David.jpg 930w" class="home-header_img"/></div><div class="home-header_img-wrap _6"><img src="assets/images/69114c8298048944fc645b58_71d1d40bf891149bbb14e7dbd7cb3937_雷門寺.jpg" loading="lazy" width="180" sizes="180px" alt="" srcset="assets/images/69114c8298048944fc645b58_71d1d40bf891149bbb14e7dbd7cb3937_雷門寺-p-500.jpg 500w, assets/images/69114c8298048944fc645b58_71d1d40bf891149bbb14e7dbd7cb3937_雷門寺-p-800.jpg 800w, assets/images/69114c8298048944fc645b58_71d1d40bf891149bbb14e7dbd7cb3937_雷門寺.jpg 1000w" class="home-header_img"/></div><div class="home-header_img-wrap _7"><img src="assets/images/69307a420ed7b33f3667fd19_M+.jpg" loading="lazy" width="180" sizes="180px" alt="" srcset="assets/images/69307a420ed7b33f3667fd19_M+-p-500.jpg 500w, assets/images/69307a420ed7b33f3667fd19_M+-p-800.jpg 800w, assets/images/69307a420ed7b33f3667fd19_M+-p-1080.jpg 1080w, assets/images/69307a420ed7b33f3667fd19_M+-p-1600.jpg 1600w, assets/images/69307a420ed7b33f3667fd19_M+.jpg 2000w" class="home-header_img"/></div><a href="index.html#" class="home-header_img-wrap _8 w-inline-block"><img src="assets/images/69307bfa2b06ca0bcd2a961f_馬丘比丘.jpeg" loading="lazy" width="180" sizes="180px" alt="" srcset="assets/images/69307bfa2b06ca0bcd2a961f_馬丘比丘-p-500.jpeg 500w, assets/images/69307bfa2b06ca0bcd2a961f_馬丘比丘-p-800.jpeg 800w, assets/images/69307bfa2b06ca0bcd2a961f_馬丘比丘-p-1080.jpeg 1080w, assets/images/69307bfa2b06ca0bcd2a961f_馬丘比丘-p-1600.jpeg 1600w, assets/images/69307bfa2b06ca0bcd2a961f_馬丘比丘.jpeg 1920w" class="home-header_img"/></a></div></div><div class="spacer-custom-1 is-mobile-small"></div><p class="home-header_text">Storyteller in Your Pocket</p><div class="spacer-medium"></div></div></div><div class="home-header_labels-wrap"><div class="padding-global"></div></div></section><div class="padding-section-small"></div><section id="section-brands" class="section_brands"><div class="padding-global is-tiny"></div><div class="padding-section-medium"><section class="section"><div class="line"></div></section></div><div class="padding-section-xxlarge"></div><div class="padding-global"><div class="container-medium"><div class="brands_head"><div class="label_wrap"><div class="label_line"></div></div><h3 id="w-node-_07226c88-2916-01e5-5d65-216c27914bbf-a3becf0f" class="heading-style-h4">Laxy blends AI magic with human creativity to free you to dream big together, we craft and deliver immersive stories to curious hearts everywhere!</h3></div></div></div><div class="spacer-xxlarge"></div><div class="padding-section-medium"></div></section><section class="section_home-about"><div class="home-about_wrapper"><div class="home-about_sticky"><div class="home-about_component"><h2 class="home-about_heading _1">We Tell</h2><div class="home-about_img-wrap"><img src="assets/images/69308090759acfc2627235a5_BG 40.png" loading="lazy" alt="" class="home-about_img"/><h2 class="home-about_img-text">Unlocking <br/>Art, Culture, and History with AI<br/><br/>We bring untold stories to the world</h2></div><h2 class="home-about_heading _2">Your Story</h2><div class="class-for-animation"><div class="animation-scroll-border"></div><div class="animation-scroll-padding"></div></div></div></div></div></section><section class="section_work-list"><div class="padding-section-medium"><div class="padding-global is-tiny"><div class="line"></div></div></div><div class="work-list_component"><div class="spacer-xlarge"><div class="label_wrap"><div class="label_line"></div><h2 class="text-style-label">Work</h2></div></div><div data-poster-url="assets/images/6932a7613b6f30d81a5faae4_man_SEA_poster.0000000.jpg" data-video-urls="assets/videos/6932a7613b6f30d81a5faae4_man_SEA_mp4.mp4,assets/videos/6932a7613b6f30d81a5faae4_man_SEA_webm.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" id="w-node-e15f57ff-4d16-3f4f-e83e-84612a8bfec6-a3becf0f" class="background-video-10 w-background-video w-background-video-atom"><video id="e15f57ff-4d16-3f4f-e83e-84612a8bfec6-video" autoplay="" loop="" style="background-image:url(assets/images/6932a7613b6f30d81a5faae4_man_SEA_poster.0000000.jpg)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="assets/videos/6932a7613b6f30d81a5faae4_man_SEA_mp4.mp4" data-wf-ignore="true"/><source src="assets/videos/6932a7613b6f30d81a5faae4_man_SEA_webm.webm" data-wf-ignore="true"/></video></div><div class="w-layout-grid grid"><div id="w-node-_7efb542f-0f20-7fd7-8b7e-24a216f318e4-a3becf0f" class="w-richtext"><p class="paragraph"><strong>Turn Information Into Content</strong></p><h6 class="heading-2">AI instantly creates videos, posts, and stories from any data you give us.</h6></div></div><div class="w-layout-grid grid"><img class="image-3" src="assets/images/693273719462676415443fb3_Iphone.png" width="484" alt="" data-wf-target="[[[&quot;69114833664924b0a3becf0f&quot;,&quot;239241ca-46eb-a7bc-a250-6d01b7d2fa4c&quot;],[]]]" sizes="(max-width: 767px) 100vw, 484px" id="w-node-_239241ca-46eb-a7bc-a250-6d01b7d2fa4c-a3becf0f" loading="lazy" srcset="assets/images/693273719462676415443fb3_Iphone-p-500.png 500w, assets/images/693273719462676415443fb3_Iphone-p-800.png 800w, assets/images/693273719462676415443fb3_Iphone-p-1080.png 1080w, assets/images/693273719462676415443fb3_Iphone-p-1600.png 1600w, assets/images/693273719462676415443fb3_Iphone-p-2000.png 2000w, assets/images/693273719462676415443fb3_Iphone-p-2600.png 2600w, assets/images/693273719462676415443fb3_Iphone.png 2647w"/><div id="w-node-f2e8346c-aa8f-76f5-d59e-6aacbb46fbff-a3becf0f" class="w-richtext"><h5 class="heading">‍</h5></div><div id="w-node-_162f34c6-ab7d-c8de-cf31-7e096783a108-a3becf0f" class="w-richtext"><p class="paragraph"><strong>Turn Content Into Apps</strong></p><h6 class="heading-2">Your ideas, your content, your fully functional app,.<br/>All built in weeks, not months</h6></div></div><div class="w-layout-grid grid-5"><div data-poster-url="assets/images/6932674835a0e0986bdef460_宇佐神宮 _20_energetic_male_JPN_poster.0000000.jpg" data-video-urls="assets/videos/6932674835a0e0986bdef460_宇佐神宮 _20_energetic_male_JPN_mp4.mp4,assets/videos/6932674835a0e0986bdef460_宇佐神宮 _20_energetic_male_JPN_webm.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video-6 w-background-video w-background-video-atom"><video id="2c6560be-c890-6add-2eb2-159df44109a7-video" autoplay="" loop="" style="background-image:url(assets/images/6932674835a0e0986bdef460_宇佐神宮 _20_energetic_male_JPN_poster.0000000.jpg)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="assets/videos/6932674835a0e0986bdef460_宇佐神宮 _20_energetic_male_JPN_mp4.mp4" data-wf-ignore="true"/><source src="assets/videos/6932674835a0e0986bdef460_宇佐神宮 _20_energetic_male_JPN_webm.webm" data-wf-ignore="true"/></video><noscript><style>
+  
+  @media (max-width: 767px) {
+    .language-switcher {
+      margin-left: 4px;
+      margin-right: 0;
+    }
+    
+    .language-icon {
+      padding: 4px 0px;
+    }
+    
+    .language-icon svg {
+      width: 16px;
+      height: 16px;
+    }
+    
+    .navbar_links-wrap {
+      gap: 6px;
+      transform: scale(0.9);
+      margin-right: 0;
+      padding-right: 0;
+    }
+    
+    .navbar_links {
+      margin-right: 6px;
+    }
+    
+    .button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+    
+    .padding-global {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    
+    .navbar_component {
+      padding-right: 0;
+    }
+  }
+</style></head><body><div class="page-wrapper"><nav class="navbar"><div class="padding-global"><div class="navbar_component"><a href="index.html" aria-current="page" class="navbar_logo-wrap w-inline-block w--current"><img src="assets/images/691149a907b1b6bfc6cdc57a_Laxy Logo.svg" loading="lazy" alt="" class="navbar_logo"/></a><div class="navbar_links-wrap"><div class="navbar_links"><a href="index.html" aria-current="page" class="navbar_link w-inline-block w--current"><div class="navbar_link-text _1">Home</div><div class="navbar_link-text _2">Home</div></a></div><a data-wf--button--variant="light-small" href="contact.html" class="button w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2 w-inline-block"><div class="button_inner w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2"><div class="button_gradient"><div class="button_gradient-ball ball-1 w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2"></div><div class="button_gradient-ball ball-2 w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2"></div></div><div class="button_text">Contact Us</div></div><div class="button_gradient-glow"><div class="button_gradient-ball ball-1 w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2"></div><div class="button_gradient-ball ball-2 w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2"></div></div></a><div class="language-switcher"><div class="language-icon" id="languageIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div><div class="language-dropdown" id="languageDropdown"><button class="language-option" data-lang="en">English</button><button class="language-option" data-lang="ja">日本語</button></div></div></div><div class="navbar_hamburger-wrap"><div class="navbar_hamburger"><div class="navbar_hamburger-line _1"></div><div class="navbar_hamburger-line _2"></div></div></div></div></div></nav><main class="main-wrapper"><section class="section_home-header"><div class="padding-section-xxlarge"></div><div class="padding-section-xxlarge"></div><div class="padding-global z-index-2"><div class="home-header_component"><div class="home-header_headings"><h1 class="home-header_heading _1">We&#x27;re here to tell your story</h1><h2 class="home-header_heading _2">to connect with audience</h2><h3 class="home-header_heading _3">to build your future.</h3></div><div class="home-header_imgs-wrapper"><div class="home-header_imgs-wrap"><div class="home-header_img-wrap _1"><img src="assets/images/69114c827c829dd113c7c942_The Louvre Museum.jpeg" loading="lazy" width="180" sizes="180px" alt="" srcset="assets/images/69114c827c829dd113c7c942_The Louvre Museum-p-500.jpeg 500w, assets/images/69114c827c829dd113c7c942_The Louvre Museum-p-800.jpeg 800w, assets/images/69114c827c829dd113c7c942_The Louvre Museum-p-1080.jpeg 1080w, assets/images/69114c827c829dd113c7c942_The Louvre Museum-p-1600.jpeg 1600w, assets/images/69114c827c829dd113c7c942_The Louvre Museum-p-2000.jpeg 2000w, assets/images/69114c827c829dd113c7c942_The Louvre Museum-p-2600.jpeg 2600w, assets/images/69114c827c829dd113c7c942_The Louvre Museum.jpeg 3000w" class="home-header_img"/></div><div class="home-header_img-wrap _2"><img src="assets/images/69307a438bc4e70fba7d8062_維納斯的誕生.jpg" loading="lazy" width="180" sizes="180px" alt="" srcset="assets/images/69307a438bc4e70fba7d8062_維納斯的誕生-p-500.jpg 500w, assets/images/69307a438bc4e70fba7d8062_維納斯的誕生-p-800.jpg 800w, assets/images/69307a438bc4e70fba7d8062_維納斯的誕生-p-1080.jpg 1080w, assets/images/69307a438bc4e70fba7d8062_維納斯的誕生.jpg 1599w" class="home-header_img"/></div><div class="home-header_img-wrap _3"><img src="assets/images/69114c8341812ba378b59c22_The Pyramid.jpeg" loading="lazy" width="180" sizes="180px" alt="" srcset="assets/images/69114c8341812ba378b59c22_The Pyramid-p-500.jpeg 500w, assets/images/69114c8341812ba378b59c22_The Pyramid-p-800.jpeg 800w, assets/images/69114c8341812ba378b59c22_The Pyramid-p-1080.jpeg 1080w, assets/images/69114c8341812ba378b59c22_The Pyramid-p-1600.jpeg 1600w, assets/images/69114c8341812ba378b59c22_The Pyramid-p-2000.jpeg 2000w, assets/images/69114c8341812ba378b59c22_The Pyramid-p-2600.jpeg 2600w, assets/images/69114c8341812ba378b59c22_The Pyramid.jpeg 3000w" class="home-header_img"/></div><div class="home-header_img-wrap _4"><img src="assets/images/69307aa13888b0cdaca95f5e_戴珍珠耳環的少女.jpg" loading="lazy" width="180" sizes="180px" alt="" srcset="assets/images/69307aa13888b0cdaca95f5e_戴珍珠耳環的少女-p-500.jpg 500w, assets/images/69307aa13888b0cdaca95f5e_戴珍珠耳環的少女.jpg 650w" class="home-header_img"/></div><div class="home-header_img-wrap _5"><img src="assets/images/69114c824381c938b6e90e71_David.jpg" loading="lazy" width="180" sizes="180px" alt="" srcset="assets/images/69114c824381c938b6e90e71_David-p-500.jpg 500w, assets/images/69114c824381c938b6e90e71_David.jpg 930w" class="home-header_img"/></div><div class="home-header_img-wrap _6"><img src="assets/images/69114c8298048944fc645b58_71d1d40bf891149bbb14e7dbd7cb3937_雷門寺.jpg" loading="lazy" width="180" sizes="180px" alt="" srcset="assets/images/69114c8298048944fc645b58_71d1d40bf891149bbb14e7dbd7cb3937_雷門寺-p-500.jpg 500w, assets/images/69114c8298048944fc645b58_71d1d40bf891149bbb14e7dbd7cb3937_雷門寺-p-800.jpg 800w, assets/images/69114c8298048944fc645b58_71d1d40bf891149bbb14e7dbd7cb3937_雷門寺.jpg 1000w" class="home-header_img"/></div><div class="home-header_img-wrap _7"><img src="assets/images/69307a420ed7b33f3667fd19_M+.jpg" loading="lazy" width="180" sizes="180px" alt="" srcset="assets/images/69307a420ed7b33f3667fd19_M+-p-500.jpg 500w, assets/images/69307a420ed7b33f3667fd19_M+-p-800.jpg 800w, assets/images/69307a420ed7b33f3667fd19_M+-p-1080.jpg 1080w, assets/images/69307a420ed7b33f3667fd19_M+-p-1600.jpg 1600w, assets/images/69307a420ed7b33f3667fd19_M+.jpg 2000w" class="home-header_img"/></div><a href="index.html#" class="home-header_img-wrap _8 w-inline-block"><img src="assets/images/69307bfa2b06ca0bcd2a961f_馬丘比丘.jpeg" loading="lazy" width="180" sizes="180px" alt="" srcset="assets/images/69307bfa2b06ca0bcd2a961f_馬丘比丘-p-500.jpeg 500w, assets/images/69307bfa2b06ca0bcd2a961f_馬丘比丘-p-800.jpeg 800w, assets/images/69307bfa2b06ca0bcd2a961f_馬丘比丘-p-1080.jpeg 1080w, assets/images/69307bfa2b06ca0bcd2a961f_馬丘比丘-p-1600.jpeg 1600w, assets/images/69307bfa2b06ca0bcd2a961f_馬丘比丘.jpeg 1920w" class="home-header_img"/></a></div></div><div class="spacer-custom-1 is-mobile-small"></div><p class="home-header_text">Storyteller in Your Pocket</p><div class="spacer-medium"></div></div></div><div class="home-header_labels-wrap"><div class="padding-global"></div></div></section><div class="padding-section-small"></div><section id="section-brands" class="section_brands"><div class="padding-global is-tiny"></div><div class="padding-section-medium"><section class="section"><div class="line"></div></section></div><div class="padding-section-xxlarge"></div><div class="padding-global"><div class="container-medium"><div class="brands_head"><div class="label_wrap"><div class="label_line"></div></div><h3 id="w-node-_07226c88-2916-01e5-5d65-216c27914bbf-a3becf0f" class="heading-style-h4">Laxy blends AI magic with human creativity to free you to dream big together, we craft and deliver immersive stories to curious hearts everywhere!</h3></div></div></div><div class="spacer-xxlarge"></div><div class="padding-section-medium"></div></section><section class="section_home-about"><div class="home-about_wrapper"><div class="home-about_sticky"><div class="home-about_component"><h2 class="home-about_heading _1">We Tell</h2><div class="home-about_img-wrap"><img src="assets/images/69308090759acfc2627235a5_BG 40.png" loading="lazy" alt="" class="home-about_img"/><h2 class="home-about_img-text">Unlocking <br/>Art, Culture, and History with AI<br/><br/>We bring untold stories to the world</h2></div><h2 class="home-about_heading _2">Your Story</h2><div class="class-for-animation"><div class="animation-scroll-border"></div><div class="animation-scroll-padding"></div></div></div></div></div></section><section class="section_work-list"><div class="padding-section-medium"><div class="padding-global is-tiny"><div class="line"></div></div></div><div class="work-list_component"><div class="spacer-xlarge"><div class="label_wrap"><div class="label_line"></div><h2 class="text-style-label">Work</h2></div></div><div class="info-content-container"><img src="assets/images/Info.png" loading="lazy" alt="Info" class="info-content-image"/><div class="transform-effect"><div class="transform-lines"><div class="transform-line"></div><div class="transform-line"></div><div class="transform-line"></div></div></div><img src="assets/images/Content.png" loading="lazy" alt="Content" class="info-content-image"/></div><div class="w-layout-grid grid"><div id="w-node-_7efb542f-0f20-7fd7-8b7e-24a216f318e4-a3becf0f" class="w-richtext"><p class="paragraph"><strong>Turn Information Into Content</strong></p><h6 class="heading-2">AI instantly creates videos, posts, and stories from any data you give us.</h6></div></div><div class="w-layout-grid grid"><img class="image-3" src="assets/images/693273719462676415443fb3_Iphone.png" width="484" alt="" data-wf-target="[[[&quot;69114833664924b0a3becf0f&quot;,&quot;239241ca-46eb-a7bc-a250-6d01b7d2fa4c&quot;],[]]]" sizes="(max-width: 767px) 100vw, 484px" id="w-node-_239241ca-46eb-a7bc-a250-6d01b7d2fa4c-a3becf0f" loading="lazy" srcset="assets/images/693273719462676415443fb3_Iphone-p-500.png 500w, assets/images/693273719462676415443fb3_Iphone-p-800.png 800w, assets/images/693273719462676415443fb3_Iphone-p-1080.png 1080w, assets/images/693273719462676415443fb3_Iphone-p-1600.png 1600w, assets/images/693273719462676415443fb3_Iphone-p-2000.png 2000w, assets/images/693273719462676415443fb3_Iphone-p-2600.png 2600w, assets/images/693273719462676415443fb3_Iphone.png 2647w"/><div id="w-node-_162f34c6-ab7d-c8de-cf31-7e096783a108-a3becf0f" class="w-richtext"><p class="paragraph"><strong>Turn Content Into Apps</strong></p><h6 class="heading-2">Your ideas, your content, your fully functional app, can built in weeks, not months</h6></div></div><div class="w-layout-grid grid-5"><div data-poster-url="assets/images/6932674835a0e0986bdef460_宇佐神宮 _20_energetic_male_JPN_poster.0000000.jpg" data-video-urls="assets/videos/6932674835a0e0986bdef460_宇佐神宮 _20_energetic_male_JPN_mp4.mp4,assets/videos/6932674835a0e0986bdef460_宇佐神宮 _20_energetic_male_JPN_webm.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video-6 w-background-video w-background-video-atom"><video id="2c6560be-c890-6add-2eb2-159df44109a7-video" autoplay="" loop="" style="background-image:url(assets/images/6932674835a0e0986bdef460_宇佐神宮 _20_energetic_male_JPN_poster.0000000.jpg)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="assets/videos/6932674835a0e0986bdef460_宇佐神宮 _20_energetic_male_JPN_mp4.mp4" data-wf-ignore="true"/><source src="assets/videos/6932674835a0e0986bdef460_宇佐神宮 _20_energetic_male_JPN_webm.webm" data-wf-ignore="true"/></video><noscript><style>
   [data-wf-bgvideo-fallback-img] {
     display: none;
   }
@@ -145,7 +605,29 @@
       width: 100%;
       object-fit: cover;
     }
-  }</style><img data-wf-bgvideo-fallback-img="true" src="assets/images/69326777cf7cf36ded1af948_宇佐神宮 _30_tourguide_female_ENG (1)_poster.0000000.jpg" alt=""/></noscript><div aria-live="polite"><button type="button" data-w-bg-video-control="true" aria-controls="d2534cdf-c4ab-6ba1-c35e-d17e9ec03bad-video" class="w-backgroundvideo-backgroundvideoplaypausebutton w-background-video--control"><span><img src="assets/images/628299f8aa233b83918e24fd_Pause.svg" loading="lazy" alt="Pause video"/></span><span hidden=""><img loading="lazy" alt="Play video" src="assets/images/628298b20ae0236682d4b87f_Play-24.svg"/></span></button></div></div></div><div class="w-layout-grid grid"><div id="w-node-b27a8cb8-bfe9-1d45-fbdd-bb52513ceb44-a3becf0f" class="w-richtext"><p class="paragraph"><strong>Your Voice, Any Language</strong></p><h6 class="heading-2">Real human-like voices in 10+ languages, any accent, any emotion instantly.</h6></div></div><div class="w-layout-grid grid"><div data-poster-url="assets/images/693266e86a40ae4957cebd74_instagram-post_poster.0000000.jpg" data-video-urls="assets/videos/693266e86a40ae4957cebd74_instagram-post_mp4.mp4,assets/videos/693266e86a40ae4957cebd74_instagram-post_webm.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video-4 w-background-video w-background-video-atom"><video id="32b34254-e84e-98a3-fd97-cb2ffc2e6da7-video" autoplay="" loop="" style="background-image:url(assets/images/693266e86a40ae4957cebd74_instagram-post_poster.0000000.jpg)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="assets/videos/693266e86a40ae4957cebd74_instagram-post_mp4.mp4" data-wf-ignore="true"/><source src="assets/videos/693266e86a40ae4957cebd74_instagram-post_webm.webm" data-wf-ignore="true"/></video></div><div id="w-node-_398e5d6d-5125-69cf-6c81-e181661280aa-a3becf0f" class="rich-text-block w-richtext"><p class="paragraph"><strong>Build Anything You Imagine</strong></p><h6 class="heading-2">Any feature, any interaction, any scale — we deliver it.</h6></div><div id="w-node-ad5fc562-296f-a4a3-bf86-9d768e08411e-a3becf0f" class="w-richtext"><p>‍</p></div></div></div><div class="padding-global"><div class="container-medium"></div></div></section><section class="section_cta"><div class="padding-section-medium"></div><div class="padding-global"><div class="container-medium"><div class="cta_component"><div class="cta_graphic-wrap"><div data-poster-url="assets/images/68502a795ba88b48b1e21bd5_Vibrant Abstract Artwork-poster-00001.jpg" data-video-urls="assets/videos/69114833664924b0a3becf6f_Vibrant Abstract Artwork-transcode.mp4,assets/videos/69114833664924b0a3becf6f_Vibrant Abstract Artwork-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="cta_graphic w-background-video w-background-video-atom"><video id="eb528ada-41c3-d51b-6c40-f1574b5466ef-video" autoplay="" loop="" style="background-image:url(assets/images/68502a795ba88b48b1e21bd5_Vibrant Abstract Artwork-poster-00001.jpg)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="assets/videos/69114833664924b0a3becf6f_Vibrant Abstract Artwork-transcode.mp4" data-wf-ignore="true"/><source src="assets/videos/69114833664924b0a3becf6f_Vibrant Abstract Artwork-transcode.webm" data-wf-ignore="true"/></video></div></div><div class="cta_content"><div class="cta_head"><div class="pill_wrap"><div class="cta_pill">Talk to us</div></div><div class="spacer-small"><div class="text-block-5">Work with Laxy</div></div><h2 class="heading-style-h5">A perfect blend of human creativity and AI superpowers.</h2></div><a href="contact.html" class="button-2 w-button">Contact us</a></div></div></div></div><div class="padding-section-medium"></div></section></main><footer class="footer"><div class="footer_wrap"><div class="footer_component"><div class="footer_main"><div class="footer_links-groups"><div id="w-node-_0632acfa-8aaa-b158-7b6a-58a2921af54f-921af54a" class="footer_group"><div class="footer_lists"><div class="footer_links-list"><a href="index.html" aria-current="page" class="footer_link w--current">Find us on</a></div></div><a href="index.html#https://www.linkedin.com/company/laxytravel/posts/?feedView=all" class="w-inline-block"><img src="assets/images/6923e57ac8c6241cd3aad8de_27738b4f578c65f984449f68413a59e2_Linkedin.png" loading="lazy" width="25" sizes="(max-width: 767px) 25px, (max-width: 991px) 3vw, 25px" alt="" id="https-www.linkedin.com-company-laxytravel-posts-feedView-all" srcset="assets/images/6923e57ac8c6241cd3aad8de_27738b4f578c65f984449f68413a59e2_Linkedin-p-500.png 500w, assets/images/6923e57ac8c6241cd3aad8de_27738b4f578c65f984449f68413a59e2_Linkedin.png 800w"/></a><a href="index.html#https://x.com/LaxyTravel" class="w-inline-block"><img loading="lazy" src="assets/images/69114833664924b0a3becf6b_social-x.svg" alt="" class="footer_social-media"/></a></div></div></div><div class="footer_legal-links"><div id="w-node-_0632acfa-8aaa-b158-7b6a-58a2921af569-921af54a" class="footer_legal-wrap"><div class="footer_copyright">© 2025 Laxy</div></div></div></div></div></footer></div><script src="assets/js/jquery.min.js" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="assets/js/webflow.schunk.7f0d524db60f29a3.js" type="text/javascript"></script><script src="assets/js/webflow.2cf0cbdb.90133362837a5b33.js" type="text/javascript"></script><script src="assets/js/gsap.min.js" type="text/javascript"></script><script src="assets/js/SplitText.min.js" type="text/javascript"></script><script src="assets/js/ScrollTrigger.min.js" type="text/javascript"></script><script>
+  }</style><img data-wf-bgvideo-fallback-img="true" src="assets/images/69326777cf7cf36ded1af948_宇佐神宮 _30_tourguide_female_ENG (1)_poster.0000000.jpg" alt=""/></noscript><div aria-live="polite"><button type="button" data-w-bg-video-control="true" aria-controls="d2534cdf-c4ab-6ba1-c35e-d17e9ec03bad-video" class="w-backgroundvideo-backgroundvideoplaypausebutton w-background-video--control"><span><img src="assets/images/628299f8aa233b83918e24fd_Pause.svg" loading="lazy" alt="Pause video"/></span><span hidden=""><img loading="lazy" alt="Play video" src="assets/images/628298b20ae0236682d4b87f_Play-24.svg"/></span></button></div></div></div><div class="w-layout-grid grid"><div id="w-node-b27a8cb8-bfe9-1d45-fbdd-bb52513ceb44-a3becf0f" class="w-richtext"><p class="paragraph"><strong>Your Voice, Any Language</strong></p><h6 class="heading-2">Real human-like voices in 10+ languages, any accent, any emotion instantly.</h6></div></div><div class="w-layout-grid grid"><div data-poster-url="assets/images/693266e86a40ae4957cebd74_instagram-post_poster.0000000.jpg" data-video-urls="assets/videos/693266e86a40ae4957cebd74_instagram-post_mp4.mp4,assets/videos/693266e86a40ae4957cebd74_instagram-post_webm.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video-4 w-background-video w-background-video-atom"><video id="32b34254-e84e-98a3-fd97-cb2ffc2e6da7-video" autoplay="" loop="" style="background-image:url(assets/images/693266e86a40ae4957cebd74_instagram-post_poster.0000000.jpg)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="assets/videos/693266e86a40ae4957cebd74_instagram-post_mp4.mp4" data-wf-ignore="true"/><source src="assets/videos/693266e86a40ae4957cebd74_instagram-post_webm.webm" data-wf-ignore="true"/></video></div><div id="w-node-_398e5d6d-5125-69cf-6c81-e181661280aa-a3becf0f" class="rich-text-block w-richtext"><p class="paragraph"><strong>Build Anything You Imagine</strong></p><h6 class="heading-2">Any feature, any interaction, any scale — we deliver it.</h6></div><div id="w-node-ad5fc562-296f-a4a3-bf86-9d768e08411e-a3becf0f" class="w-richtext"><p>‍</p></div></div></div><div class="padding-global"><div class="container-medium"></div></div></section><section class="section_cta"><div class="padding-section-medium"></div><div class="padding-global"><div class="container-medium"><div class="cta_component"><div class="cta_graphic-wrap"><div data-poster-url="assets/images/68502a795ba88b48b1e21bd5_Vibrant Abstract Artwork-poster-00001.jpg" data-video-urls="assets/videos/69114833664924b0a3becf6f_Vibrant Abstract Artwork-transcode.mp4,assets/videos/69114833664924b0a3becf6f_Vibrant Abstract Artwork-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="cta_graphic w-background-video w-background-video-atom"><video id="eb528ada-41c3-d51b-6c40-f1574b5466ef-video" autoplay="" loop="" style="background-image:url(assets/images/68502a795ba88b48b1e21bd5_Vibrant Abstract Artwork-poster-00001.jpg)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="assets/videos/69114833664924b0a3becf6f_Vibrant Abstract Artwork-transcode.mp4" data-wf-ignore="true"/><source src="assets/videos/69114833664924b0a3becf6f_Vibrant Abstract Artwork-transcode.webm" data-wf-ignore="true"/></video></div></div><div class="cta_content"><div class="cta_head"><div class="pill_wrap"><div class="cta_pill">Talk to us</div></div><div class="spacer-small"><div class="text-block-5">Work with Laxy</div></div><h2 class="heading-style-h5">A perfect blend of human creativity and AI superpowers.</h2></div><a href="contact.html" class="button-2 w-button">Contact us</a></div></div></div></div><div class="padding-section-medium"></div></section></main><footer class="footer"><div class="footer_wrap"><div class="footer_component"><div class="footer_main"><div class="footer_links-groups"><div id="w-node-_0632acfa-8aaa-b158-7b6a-58a2921af54f-921af54a" class="footer_group"><div class="footer_lists"><div class="footer_links-list"><a href="index.html" aria-current="page" class="footer_link w--current">Find us on</a></div></div><div class="footer_social-links"><a href="https://www.linkedin.com/company/laxytravel/" target="_blank" rel="noopener noreferrer" class="footer_social-link w-inline-block"><img src="assets/images/6923e57ac8c6241cd3aad8de_27738b4f578c65f984449f68413a59e2_Linkedin.png" loading="lazy" width="25" alt="LinkedIn" class="footer_social-icon"/></a><a href="https://www.instagram.com/laxytravel/" target="_blank" rel="noopener noreferrer" class="footer_social-link w-inline-block"><svg width="25" height="25" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg" class="footer_social-icon"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a><a href="https://www.facebook.com/laxytravel" target="_blank" rel="noopener noreferrer" class="footer_social-link w-inline-block"><svg width="25" height="25" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg" class="footer_social-icon"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://x.com/laxytravel" target="_blank" rel="noopener noreferrer" class="footer_social-link w-inline-block"><img loading="lazy" src="assets/images/69114833664924b0a3becf6b_social-x.svg" alt="X (Twitter)" class="footer_social-icon"/></a></div></div></div></div><div class="footer_legal-links"><div id="w-node-_0632acfa-8aaa-b158-7b6a-58a2921af569-921af54a" class="footer_legal-wrap"><div class="footer_copyright">© 2025 Laxy</div></div></div></div></div></footer></div><script src="assets/js/jquery.min.js" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="assets/js/webflow.schunk.7f0d524db60f29a3.js" type="text/javascript"></script><script src="assets/js/webflow.2cf0cbdb.90133362837a5b33.js" type="text/javascript"></script><script src="assets/js/gsap.min.js" type="text/javascript"></script><script src="assets/js/SplitText.min.js" type="text/javascript"></script><script src="assets/js/ScrollTrigger.min.js" type="text/javascript"></script><script>
+  // Scroll-triggered animation for Info/Content images
+  document.addEventListener('DOMContentLoaded', function() {
+    const infoContentImages = document.querySelectorAll('.info-content-image');
+    
+    const observerOptions = {
+      threshold: 0.3,
+      rootMargin: '0px 0px -100px 0px'
+    };
+    
+    const imageObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+        }
+      });
+    }, observerOptions);
+    
+    infoContentImages.forEach(function(img) {
+      imageObserver.observe(img);
+    });
+  });
+  
   // Language Switcher Functionality with Dynamic Content
   document.addEventListener('DOMContentLoaded', function() {
     // Translations object
@@ -165,7 +647,7 @@
         infoToContent: 'Turn Information Into Content',
         infoToContentDesc: 'AI instantly creates videos, posts, and stories from any data you give us.',
         contentToApps: 'Turn Content Into Apps',
-        contentToAppsDesc: 'Your ideas, your content, your fully functional app,.<br/>All built in weeks, not months',
+        contentToAppsDesc: 'Your ideas, your content, your fully functional app, can built in weeks, not months.',
         yourVoice: 'Your Voice, Any Language',
         yourVoiceDesc: 'Real human-like voices in 10+ languages, any accent, any emotion instantly.',
         buildAnything: 'Build Anything You Imagine',
@@ -186,12 +668,12 @@
         blendText: 'Laxyは、AIの魔法と人間の創造性を融合させ、夢を大きく描く自由を与えます。私たちは、好奇心旺盛な心に没入型のストーリーを届けます！',
         weTell: '私たちは語る',
         yourStory: 'あなたのストーリー',
-        imgText: 'AIでアート、文化、歴史を解き明かす<br/><br/>私たちは世界に語られていないストーリーをもたらします',
+        imgText: 'AIでアート、文化、歴史を解き明かす<br/><br/>私たちは世界に語られていない<br/><br/>ストーリーをもたらします',
         work: '実績',
         infoToContent: '情報をコンテンツに変換',
         infoToContentDesc: 'AIは、提供されたデータから瞬時に動画、投稿、ストーリーを作成します。',
         contentToApps: 'コンテンツをアプリに変換',
-        contentToAppsDesc: 'あなたのアイデア、あなたのコンテンツ、完全に機能するアプリ。<br/>数ヶ月ではなく、数週間で構築。',
+        contentToAppsDesc: 'あなたのアイデア、あなたのコンテンツ、完全に機能するアプリ。数週間で構築できます。',
         yourVoice: 'あなたの声、どんな言語でも',
         yourVoiceDesc: '10以上の言語で、どんなアクセント、どんな感情でも、瞬時に人間らしい声を再現。',
         buildAnything: 'あなたが想像するものすべてを構築',
@@ -250,6 +732,23 @@
       // Update Work section
       const workLabel = document.querySelector('.text-style-label');
       if (workLabel) workLabel.textContent = t.work;
+      
+      // Update Work section content items
+      const workSections = [
+        { selector: '#w-node-_7efb542f-0f20-7fd7-8b7e-24a216f318e4-a3becf0f .paragraph strong', key: 'infoToContent' },
+        { selector: '#w-node-_7efb542f-0f20-7fd7-8b7e-24a216f318e4-a3becf0f .heading-2', key: 'infoToContentDesc' },
+        { selector: '#w-node-_162f34c6-ab7d-c8de-cf31-7e096783a108-a3becf0f .paragraph strong', key: 'contentToApps' },
+        { selector: '#w-node-_162f34c6-ab7d-c8de-cf31-7e096783a108-a3becf0f .heading-2', key: 'contentToAppsDesc' },
+        { selector: '#w-node-b27a8cb8-bfe9-1d45-fbdd-bb52513ceb44-a3becf0f .paragraph strong', key: 'yourVoice' },
+        { selector: '#w-node-b27a8cb8-bfe9-1d45-fbdd-bb52513ceb44-a3becf0f .heading-2', key: 'yourVoiceDesc' },
+        { selector: '#w-node-_398e5d6d-5125-69cf-6c81-e181661280aa-a3becf0f .paragraph strong', key: 'buildAnything' },
+        { selector: '#w-node-_398e5d6d-5125-69cf-6c81-e181661280aa-a3becf0f .heading-2', key: 'buildAnythingDesc' }
+      ];
+      
+      workSections.forEach(section => {
+        const element = document.querySelector(section.selector);
+        if (element) element.textContent = t[section.key];
+      });
       
       // Update CTA section
       const ctaPill = document.querySelector('.cta_pill');

@@ -10,6 +10,60 @@
   font-family: 'Inter', sans-serif;
 }
   
+  /* Ensure Send Message button uses Inter font */
+  .button-solid,
+  input[type="submit"],
+  .w-button {
+    font-family: 'Inter', sans-serif !important;
+  }
+  
+  /* Disable all hover/interaction effects on Contact Us button */
+  .button .button_gradient-ball {
+    animation: none !important;
+    background: transparent !important;
+  }
+  
+  .button .button_gradient {
+    opacity: 0 !important;
+    animation: none !important;
+    display: none !important;
+  }
+  
+  .button .button_gradient-glow {
+    opacity: 0 !important;
+    animation: none !important;
+    display: none !important;
+  }
+  
+  .button:hover .button_gradient-ball,
+  .button:focus .button_gradient-ball,
+  .button:active .button_gradient-ball {
+    animation: none !important;
+    background: transparent !important;
+  }
+  
+  .button:hover .button_gradient,
+  .button:focus .button_gradient,
+  .button:active .button_gradient {
+    opacity: 0 !important;
+    animation: none !important;
+    display: none !important;
+  }
+  
+  .button:hover .button_gradient-glow,
+  .button:focus .button_gradient-glow,
+  .button:active .button_gradient-glow {
+    opacity: 0 !important;
+    animation: none !important;
+    display: none !important;
+  }
+  
+  .button:hover,
+  .button:focus,
+  .button:active {
+    transform: none !important;
+  }
+  
   /* Equal margins for all navbar components */
   .navbar_links {
     margin-right: 12px;
@@ -24,6 +78,7 @@
     position: relative;
     display: inline-flex;
     align-items: center;
+    margin-left: 8px;
   }
   
   .language-icon {
@@ -90,9 +145,35 @@
     background: #e8e8e8;
   }
   
-  @media (max-width: 991px) {
+  /* iPad and Tablet view */
+  @media (max-width: 1024px) and (min-width: 768px) {
+    .navbar_links-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .navbar_links {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+    }
+    
+    .navbar_link {
+      display: flex;
+      align-items: center;
+    }
+    
+    .button {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+    }
+    
     .language-switcher {
-      margin-left: 15px;
+      margin-left: 6px;
+      display: flex;
+      align-items: center;
     }
     
     .language-icon svg {
@@ -101,21 +182,101 @@
     }
   }
   
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     .language-switcher {
-      margin-left: 10px;
-    }
-    
-    .language-icon {
-      padding: 6px 10px;
+      margin-left: 6px;
     }
     
     .language-icon svg {
-      width: 18px;
-      height: 18px;
+      width: 20px;
+      height: 20px;
+    }
+    
+    .navbar_links-wrap {
+      gap: 8px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .navbar_links {
+      margin-right: 8px;
+      display: flex;
+      align-items: center;
     }
   }
-</style></head><body><a href="https://webflow.com/templates/html/noura-website-template" target="_blank" class="buy-template w-button">Use for free</a><div class="page-wrapper"><nav class="navbar"><div class="padding-global"><div class="navbar_component"><a href="index.html" class="navbar_logo-wrap w-inline-block"><img src="assets/images/691149a907b1b6bfc6cdc57a_Laxy Logo.svg" loading="lazy" alt="" class="navbar_logo"/></a><div class="navbar_links-wrap"><div class="navbar_links"><a href="index.html" class="navbar_link w-inline-block"><div class="navbar_link-text _1">Home</div><div class="navbar_link-text _2">Home</div></a></div><a data-wf--button--variant="light-small" href="contact.html" aria-current="page" class="button w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2 w-inline-block w--current"><div class="button_inner w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2"><div class="button_gradient"><div class="button_gradient-ball ball-1 w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2"></div><div class="button_gradient-ball ball-2 w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2"></div></div><div class="button_text">Contact Us</div></div><div class="button_gradient-glow"><div class="button_gradient-ball ball-1 w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2"></div><div class="button_gradient-ball ball-2 w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2"></div></div></a><div class="language-switcher"><div class="language-icon" id="languageIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div><div class="language-dropdown" id="languageDropdown"><button class="language-option" data-lang="en">English</button><button class="language-option" data-lang="ja">日本語</button></div></div></div><div class="navbar_hamburger-wrap"><div class="navbar_hamburger"><div class="navbar_hamburger-line _1"></div><div class="navbar_hamburger-line _2"></div></div></div></div></div></nav><div class="main-wrapper"><header id="success" tr-scrollflip-element="component" class="section_contact"><div class="padding-section-medium is-mobile-big"></div><div class="padding-global"><div class="container-xxsmall"><div class="contact_form-wrap"><h1 class="heading-style-h3">Contact</h1><div class="spacer-medium"></div><div class="contact_form-block w-form"><form id="wf-form-Contact-forn" name="wf-form-Contact-forn" data-name="Contact forn" method="get" class="contact_form" data-wf-page-id="69114833664924b0a3bed05d" data-wf-element-id="15e79eb7-124c-56a8-5118-769e8bf59a1d"><div class="contact_fields"><div class="contact_fields-wrap"><div class="contact_field-wrap-2"><label for="name" class="hide">Name</label><input class="form_field w-input" maxlength="256" name="name" data-name="Name" placeholder="Name" type="text" id="name" required=""/></div><div class="contact_field-wrap-2"><label for="Email" class="hide">Email</label><input class="form_field w-input" maxlength="256" name="Email" data-name="Email" placeholder="Email" type="email" id="Email" required=""/></div><div class="contact_field-wrap-2"><label for="Subject" class="hide">Company</label><input class="form_field w-input" maxlength="256" name="Subject" data-name="Subject" placeholder="Subject" type="text" id="Subject" required=""/></div><div class="contact_field-wrap-2"><label for="Message" class="hide">Message</label><textarea id="Message" name="Message" maxlength="5000" data-name="Message" placeholder="Message" required="" class="form_field message w-input"></textarea></div></div><input type="submit" data-wait="Please wait..." class="button-solid w-button" value="Send message"/></div></form><div class="success-message w-form-done"><div class="newsletter_success-in"><div class="heading-style-h6">Thank you!</div><div class="newsletter_success-text">Your submission has been received!</div></div></div><div class="error-message w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div><div class="spacer-xhuge"></div></div></div></div><div class="padding-section-medium is-mobile-small"></div></header></div><footer class="footer"><div class="footer_wrap"><div class="footer_component"><div class="footer_main"><div class="footer_links-groups"><div id="w-node-_0632acfa-8aaa-b158-7b6a-58a2921af54f-921af54a" class="footer_group"><div class="footer_lists"><div class="footer_links-list"><a href="index.html" class="footer_link">Find us on</a></div></div><a href="contact.html#https://www.linkedin.com/company/laxytravel/posts/?feedView=all" class="w-inline-block"><img src="assets/images/6923e57ac8c6241cd3aad8de_27738b4f578c65f984449f68413a59e2_Linkedin.png" loading="lazy" width="25" sizes="(max-width: 767px) 25px, (max-width: 991px) 3vw, 25px" alt="" id="https-www.linkedin.com-company-laxytravel-posts-feedView-all" srcset="assets/images/6923e57ac8c6241cd3aad8de_27738b4f578c65f984449f68413a59e2_Linkedin-p-500.png 500w, assets/images/6923e57ac8c6241cd3aad8de_27738b4f578c65f984449f68413a59e2_Linkedin.png 800w"/></a><a href="contact.html#https://x.com/LaxyTravel" class="w-inline-block"><img loading="lazy" src="assets/images/69114833664924b0a3becf6b_social-x.svg" alt="" class="footer_social-media"/></a></div></div></div><div class="footer_legal-links"><div id="w-node-_0632acfa-8aaa-b158-7b6a-58a2921af569-921af54a" class="footer_legal-wrap"><div class="footer_copyright">© 2025 Laxy</div></div></div></div></div></footer></div><script src="assets/js/jquery.min.js" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="assets/js/webflow.schunk.7f0d524db60f29a3.js" type="text/javascript"></script><script src="assets/js/webflow.schunk.c07e23c78fb1e95a.js" type="text/javascript"></script><script src="assets/js/webflow.4359e259.8c551ed7656b9e26.js" type="text/javascript"></script><script src="assets/js/gsap.min.js" type="text/javascript"></script><script src="assets/js/SplitText.min.js" type="text/javascript"></script><script src="assets/js/ScrollTrigger.min.js" type="text/javascript"></script><script>
+  
+  @media (max-width: 767px) {
+    .language-switcher {
+      margin-left: 4px;
+      margin-right: 0;
+    }
+    
+    .language-icon {
+      padding: 4px 0px;
+    }
+    
+    .language-icon svg {
+      width: 16px;
+      height: 16px;
+    }
+    
+    .navbar_links-wrap {
+      gap: 6px;
+      transform: scale(0.9);
+      margin-right: 0;
+      padding-right: 0;
+    }
+    
+    .navbar_links {
+      margin-right: 6px;
+    }
+    
+    .button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+    
+    .padding-global {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    
+    .navbar_component {
+      padding-right: 0;
+    }
+  }
+  
+  /* Footer social media links styling */
+  .footer_social-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .footer_social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .footer_social-link:hover {
+    opacity: 0.7;
+  }
+  
+  .footer_social-icon {
+    width: 25px;
+    height: 25px;
+    display: block;
+  }
+  
+  .footer_social-icon svg {
+    width: 25px;
+    height: 25px;
+    display: block;
+  }
+</style></head><body><a href="https://webflow.com/templates/html/noura-website-template" target="_blank" class="buy-template w-button">Use for free</a><div class="page-wrapper"><nav class="navbar"><div class="padding-global"><div class="navbar_component"><a href="index.html" class="navbar_logo-wrap w-inline-block"><img src="assets/images/691149a907b1b6bfc6cdc57a_Laxy Logo.svg" loading="lazy" alt="" class="navbar_logo"/></a><div class="navbar_links-wrap"><div class="navbar_links"><a href="index.html" class="navbar_link w-inline-block"><div class="navbar_link-text _1">Home</div><div class="navbar_link-text _2">Home</div></a></div><a data-wf--button--variant="light-small" href="contact.html" aria-current="page" class="button w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2 w-inline-block w--current"><div class="button_inner w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2"><div class="button_gradient"><div class="button_gradient-ball ball-1 w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2"></div><div class="button_gradient-ball ball-2 w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2"></div></div><div class="button_text">Contact Us</div></div><div class="button_gradient-glow"><div class="button_gradient-ball ball-1 w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2"></div><div class="button_gradient-ball ball-2 w-variant-994e88c4-baec-2bbf-d0b3-8a2991a92ab2"></div></div></a><div class="language-switcher"><div class="language-icon" id="languageIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div><div class="language-dropdown" id="languageDropdown"><button class="language-option" data-lang="en">English</button><button class="language-option" data-lang="ja">日本語</button></div></div></div><div class="navbar_hamburger-wrap"><div class="navbar_hamburger"><div class="navbar_hamburger-line _1"></div><div class="navbar_hamburger-line _2"></div></div></div></div></div></nav><div class="main-wrapper"><header id="success" tr-scrollflip-element="component" class="section_contact"><div class="padding-section-medium is-mobile-big"></div><div class="padding-global"><div class="container-xxsmall"><div class="contact_form-wrap"><h1 class="heading-style-h3">Contact</h1><div class="spacer-medium"></div><div class="contact_form-block w-form"><form id="wf-form-Contact-forn" name="wf-form-Contact-forn" data-name="Contact forn" action="https://formsubmit.co/hello@laxy.travel" method="POST" class="contact_form" data-wf-page-id="69114833664924b0a3bed05d" data-wf-element-id="15e79eb7-124c-56a8-5118-769e8bf59a1d"><div class="contact_fields"><div class="contact_fields-wrap"><div class="contact_field-wrap-2"><label for="name" class="hide">Name</label><input class="form_field w-input" maxlength="256" name="name" data-name="Name" placeholder="Name" type="text" id="name" required=""/></div><div class="contact_field-wrap-2"><label for="Email" class="hide">Email</label><input class="form_field w-input" maxlength="256" name="Email" data-name="Email" placeholder="Email" type="email" id="Email" required=""/></div><div class="contact_field-wrap-2"><label for="Subject" class="hide">Company</label><input class="form_field w-input" maxlength="256" name="Subject" data-name="Subject" placeholder="Subject" type="text" id="Subject" required=""/></div><div class="contact_field-wrap-2"><label for="Message" class="hide">Message</label><textarea id="Message" name="Message" maxlength="5000" data-name="Message" placeholder="Message" required="" class="form_field message w-input"></textarea></div></div><input type="submit" data-wait="Please wait..." class="button-solid w-button" value="Send message"/></div></form><div class="success-message w-form-done"><div class="newsletter_success-in"><div class="heading-style-h6">Thank you!</div><div class="newsletter_success-text">Your submission has been received!</div></div></div><div class="error-message w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div><div class="spacer-xhuge"></div></div></div></div><div class="padding-section-medium is-mobile-small"></div></header></div><footer class="footer"><div class="footer_wrap"><div class="footer_component"><div class="footer_main"><div class="footer_links-groups"><div id="w-node-_0632acfa-8aaa-b158-7b6a-58a2921af54f-921af54a" class="footer_group"><div class="footer_lists"><div class="footer_links-list"><a href="index.html" class="footer_link">Find us on</a></div></div><div class="footer_social-links"><a href="https://www.linkedin.com/company/laxytravel/" target="_blank" rel="noopener noreferrer" class="footer_social-link w-inline-block"><img src="assets/images/6923e57ac8c6241cd3aad8de_27738b4f578c65f984449f68413a59e2_Linkedin.png" loading="lazy" width="25" alt="LinkedIn" class="footer_social-icon"/></a><a href="https://www.instagram.com/laxytravel/" target="_blank" rel="noopener noreferrer" class="footer_social-link w-inline-block"><svg width="25" height="25" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg" class="footer_social-icon"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a><a href="https://www.facebook.com/laxytravel" target="_blank" rel="noopener noreferrer" class="footer_social-link w-inline-block"><svg width="25" height="25" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg" class="footer_social-icon"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://x.com/laxytravel" target="_blank" rel="noopener noreferrer" class="footer_social-link w-inline-block"><img loading="lazy" src="assets/images/69114833664924b0a3becf6b_social-x.svg" alt="X (Twitter)" class="footer_social-icon"/></a></div></div></div></div><div class="footer_legal-links"><div id="w-node-_0632acfa-8aaa-b158-7b6a-58a2921af569-921af54a" class="footer_legal-wrap"><div class="footer_copyright">© 2025 Laxy</div></div></div></div></div></footer></div><script src="assets/js/jquery.min.js" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="assets/js/webflow.schunk.7f0d524db60f29a3.js" type="text/javascript"></script><script src="assets/js/webflow.schunk.c07e23c78fb1e95a.js" type="text/javascript"></script><script src="assets/js/webflow.4359e259.8c551ed7656b9e26.js" type="text/javascript"></script><script src="assets/js/gsap.min.js" type="text/javascript"></script><script src="assets/js/SplitText.min.js" type="text/javascript"></script><script src="assets/js/ScrollTrigger.min.js" type="text/javascript"></script><script>
   // Language Switcher Functionality with Dynamic Content
   document.addEventListener('DOMContentLoaded', function() {
     // Translations object
@@ -212,10 +373,22 @@
       document.documentElement.lang = lang;
     }
     
-    // Load saved language preference
-    const savedLang = localStorage.getItem('preferredLanguage') || 'en';
-    if (savedLang !== 'en') {
-      updateContent(savedLang);
+    // Check if we just reloaded after language change
+    const justReloaded = sessionStorage.getItem('languageJustChanged') === 'true';
+    
+    if (justReloaded) {
+      // Clear flag and apply the saved language after reload
+      sessionStorage.removeItem('languageJustChanged');
+      const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+      if (savedLang !== 'en') {
+        updateContent(savedLang);
+      }
+    } else {
+      // Normal page load - apply saved language without reload
+      const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+      if (savedLang !== 'en') {
+        updateContent(savedLang);
+      }
     }
     
     // Handle language selection
@@ -224,7 +397,17 @@
       option.addEventListener('click', function(e) {
         e.preventDefault();
         const selectedLang = this.getAttribute('data-lang');
-        updateContent(selectedLang);
+        const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+        
+        // Only reload if language actually changed
+        if (selectedLang !== currentLang) {
+          // Store preference first
+          localStorage.setItem('preferredLanguage', selectedLang);
+          // Set flag to indicate we're reloading after language change
+          sessionStorage.setItem('languageJustChanged', 'true');
+          // Reload to re-trigger Webflow animations
+          window.location.reload();
+        }
       });
     });
   });
